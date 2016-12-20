@@ -7,6 +7,7 @@ package hello;
  */
 
 import io.swagger.annotations.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,7 +18,9 @@ import java.util.concurrent.atomic.AtomicLong;
 @RestController
 public class GreetingController {
 
-    private static final String template = "Hello, %s!";
+    @Autowired
+    private Config config;
+
     private final AtomicLong counter = new AtomicLong();
 
     @ApiOperation(value = "getGreeting", nickname = "getGreeting")
@@ -32,6 +35,7 @@ public class GreetingController {
             @ApiResponse(code = 404, message = "Not Found"),
             @ApiResponse(code = 500, message = "Failure")})
     public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
+        String template = String.format("%s", config.getWelcomeMessage())  + ", %s!";
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
     }
 }
