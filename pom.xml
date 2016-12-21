@@ -18,15 +18,16 @@
         <url>https://github.com/dempj/spring-boot-openshift-hello-world </url>
         <connection>scm:git:git@github.com:dempj/spring-boot-openshift-hello-world.git</connection>
         <developerConnection>scm:git:git@github.com:dempj/spring-boot-openshift-hello-world.git</developerConnection>
-      <tag>spring-boot-hello-world-0.1.0</tag>
   </scm>
 
     <distributionManagement>
         <repository>
+            <id>deployment</id>
             <name>Release Repository</name>
             <url>http://nexusci.apps.test.cloudstore.run/repository/vfcloudstore-releases/</url>
         </repository>
         <snapshotRepository>
+            <id>deployment</id>
             <name>Snapshot Repository</name>
             <url>http://nexusci.apps.test.cloudstore.run/repository/vfcloudstore-snapshots/</url>
         </snapshotRepository>
