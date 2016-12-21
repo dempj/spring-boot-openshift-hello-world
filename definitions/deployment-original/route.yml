@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Route
+metadata:
+   name: goop-route
+spec:
+   host: goop.apps.test.cloudstore.run
+   to:
+     kind: Service
+     name: goop-svc
+   port:
+    targetPort: 8080-tcp
