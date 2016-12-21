@@ -16,8 +16,8 @@
 
     <scm>
         <url>https://github.com/dempj/spring-boot-openshift-hello-world </url>
-        <connection>scm:git:https://github.com/dempj/spring-boot-openshift-hello-world.git</connection>
-        <developerConnection>scm:git:https://github.com/dempj/spring-boot-openshift-hello-world.git</developerConnection>
+        <connection>scm:git:git@github.com:dempj/spring-boot-openshift-hello-world.git</connection>
+        <developerConnection>scm:git:git@github.com:dempj/spring-boot-openshift-hello-world.git</developerConnection>
       <tag>spring-boot-hello-world-0.1.0</tag>
   </scm>
 
