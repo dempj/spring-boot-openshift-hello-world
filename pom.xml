@@ -4,7 +4,7 @@
 
     <groupId>ru.lipatkin.experiments</groupId>
     <artifactId>spring-boot-hello-world</artifactId>
-    <version>0.1.1</version>
+    <version>0.1.2-SNAPSHOT</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -18,7 +18,7 @@
         <url>https://github.com/dempj/spring-boot-openshift-hello-world </url>
         <connection>scm:git:https://github.com/dempj/spring-boot-openshift-hello-world.git</connection>
         <developerConnection>scm:git:https://github.com/dempj/spring-boot-openshift-hello-world.git</developerConnection>
-      <tag>spring-boot-hello-world-0.1.1</tag>
+      <tag>spring-boot-hello-world-0.1.0</tag>
   </scm>
 
     <distributionManagement>
