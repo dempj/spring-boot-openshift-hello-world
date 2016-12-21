@@ -18,6 +18,10 @@ node('maven') {
         sh 'mvn -f pom.xml deploy'
     }
 
+    stage('Apply definitions'){
+        sh 'oc apply -f definitions/deployment/'
+    }
+
     stage('Deploy'){
       sh "mkdir -p target/deploy"
       sh "cp Dockerfile target/deploy"
