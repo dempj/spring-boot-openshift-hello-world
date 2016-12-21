@@ -4,7 +4,7 @@
 
     <groupId>ru.lipatkin.experiments</groupId>
     <artifactId>spring-boot-hello-world</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1-SNAPSHOT</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
